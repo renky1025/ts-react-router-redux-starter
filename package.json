@@ -1,0 +1,39 @@
+{
+    "name": "ts-react-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --mode development --hot --progress --color --port 8001",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^16.7.6",
+        "@types/react-dom": "^16.0.9",
+        "@types/react-redux": "^6.0.9",
+        "awesome-typescript-loader": "^5.2.1",
+        "html-webpack-plugin": "^3.2.0",
+        "react-hot-loader": "^4.3.12",
+        "typescript": "^3.1.6",
+        "webpack": "^4.25.1",
+        "webpack-cli": "^3.1.2"
+    },
+    "dependencies": {
+        "@types/react-router": "^4.4.1",
+        "@types/redux-actions": "^2.3.1",
+        "@types/uuid": "^3.4.4",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-redux": "^5.1.1",
+        "react-router-dom": "^4.3.1",
+        "redux": "^4.0.1",
+        "redux-actions": "^2.6.4",
+        "redux-thunk": "^2.3.0",
+        "typesafe-actions": "^2.0.4",
+        "uuid": "^3.3.2",
+        "webpack-dev-server": "^3.1.10"
+    }
+}
