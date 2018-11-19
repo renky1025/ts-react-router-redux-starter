@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { Button,Input } from 'antd';
 import { connect } from "react-redux";
 import * as uuidv1 from "uuid";
+import './app.scss';
 import { addArticle } from "../actions/index";
 const mapDispatchToProps = dispatch => {
   return {
@@ -34,22 +36,16 @@ class ConnectedForm extends React.Component<FormPropsIF, FormStateIF> {
     this.setState({ title: "" });
   }
   render() {
+    //const Search = Input.Search;
     const {title}  = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}  className="form">
         <div className="form-group">
           <label htmlFor="title">Title</label>
-          <input
-            type="text"
-            className="form-control"
-            id="title"
-            value={title}
-            onChange={this.handleChange}
-          />
+          <Input id="title" placeholder="Basic usage" value={title} onChange={this.handleChange} />
+          
         </div>
-        <button type="submit" className="btn btn-success btn-lg">
-          SAVE
-        </button>
+        <Button size="large" type="primary" htmlType="submit">SAVE</Button>
       </form>
     );
   }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Route, Switch } from 'react-router';
+import { hot } from 'react-hot-loader';
 import Home from './Home';
 import Dashboard from './Dashboard';
 const App = () => (
@@ -9,4 +10,5 @@ const App = () => (
   </Switch>
 );
 
-export  default App
+export default App
+// export default hot(module)(App)
